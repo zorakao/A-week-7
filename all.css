@@ -1,0 +1,212 @@
+/* 外部資源 - 引入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* 全域設定 */
+
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: middle;/* 移除圖片下方會有空格的問題 */
+}
+
+a{
+    color: var(--primary-400);
+    text-underline-offset: 4px;  /* 設定下底線偏移 */
+    display: block; /* 每個連結都是獨立一行，所以可以設定成區塊元素 */
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em; 
+    color: var(--neutral--900);
+}
+
+/* 通用樣式 */
+
+.container{
+    width: 856px;
+    margin: 0 auto;
+}
+
+.h1{
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h2{
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h3{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h4{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h5{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.text-sm{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/* 文字顏色的通用樣式 */
+
+/* 使用變數 */
+:root{ 
+    --primary-100: #F5FEE7;
+    --primary-400: #57A203;
+    --neutral--0: #FFFFFF;
+    --neutral--100: #F8F9FA;
+    --neutral--300: #DEE2E6;
+    --neutral--600: #6C757D;
+    --neutral--900: #212529;
+}
+
+/* 字體部分 *//* 套用變數 */
+
+.text-primary-400{          
+    color: var(--primary-400);
+}
+.text-white{
+    color: var(--neutral--0);
+}
+
+.text-neutral-600{
+    color: var(--neutral--600);
+}
+
+
+/* 背景顏色 */
+
+.bg-primary-100{
+    background-color: var(--primary-100);
+}
+
+.bg-neutral-100{
+    background-color: var(--neutral--100);
+}
+
+
+
+/* 間距 */
+
+.p-32{
+    padding: 32px;   
+}
+
+.pe-8{
+    padding-right: 8px;
+}
+
+.py-8{
+    padding: 8px 0;
+}
+
+.py-64{
+    padding: 64px 0;
+}
+
+.mb-4{
+    margin-bottom: 4px;
+}
+
+.mb-12{
+    margin-bottom: 12px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
+
+.pb-48{
+    padding-bottom: 48px;
+}
+
+
+/*page */
+.header{
+    background-image: url(images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 152px 0; /* 使用padding/2的方式，推高圖片高度 */
+    text-align: center;
+}
+
+.eng-title{
+    font-size: 28px;
+}
+
+.radius{
+    border-radius: 4px;
+    text-align: center;
+}
+
+.intro img{
+    width: 1076px;
+    margin-left: -110px;
+    margin-right: -110px;
+}    
+
+.section-line{
+    border-bottom: 1px solid var(--neutral--300);
+}
+
+.history-desc{
+    border-left: 1px solid var(--neutral--900);
+    padding-left: 8px;
+}
+
+.history-list{
+    list-style-type: disc;
+    padding-left: 24px;  /* 設定原點樣式後，因凸出去沒對齊，所以設定左側padding，讓原點縮回對齊 */
+}
+
+.concept-item{
+    padding-left: 12px;
+    border-left: 3px solid var(--neutral--300);
+}
+
+.bi{ /* 直接使用BS-icon的class做設定 */
+    padding-right: 8px;
+    vertical-align: bottom;
+}
+
+.footer{
+    text-align: center;
+}
+
+.boxBlue{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
